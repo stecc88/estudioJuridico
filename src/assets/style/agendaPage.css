@@ -1,0 +1,19 @@
+/* HEADER */
+.bg-header {
+  background-color: #537b7b;
+  min-height: 70px;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+nav a {
+  font-weight: 600;
+  padding-right: 10px;
+}
+
+nav a:hover {
+  color: white;
+}
