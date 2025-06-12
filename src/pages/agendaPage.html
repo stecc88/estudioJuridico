@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agenda - Estudio Jurídico</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agenda - Estudio Jurídico</title>
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"/>
-      <link rel="stylesheet" href="../assets/style/agendaPage.css">
-   
-  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/style/agendaPage.css">
+</head>
 
-    
-  </head>
+<body class="bg-light">
+
   <!-- HEADER -->
   <header class="d-flex align-items-center justify-content-between p-3 bg-header">
     <a href="#" class="logo d-flex align-items-center">
-      <img src="https://w7.pngwing.com/pngs/992/826/png-transparent-lawyer-advocate-law-firm-lawyer-people-logo-law-thumbnail.png"
-        alt="logo compañia">
+      <img src="https://w7.pngwing.com/pngs/992/826/png-transparent-lawyer-advocate-law-firm-lawyer-people-logo-law-thumbnail.png" alt="logo compañia">
       <h2 class="ProyectoG4">ProyectoG4</h2>
     </a>
     <nav>
@@ -27,130 +23,128 @@
     </nav>
   </header>
 
+  <!-- CONTENIDO PRINCIPAL -->
   <main class="container-fluid">
-    <div class="row">
-  <body class="bg-light">
-    <main>
-    <div class="container-fluid">
-      <div class="row min-vh-100">
-        
-        <!-- Menú lateral -->
-        <aside class="col-12 col-lg-3 bg-light border-end p-3">
-          <h2 class="h5">Menú</h2>
-          <ul class="list-group">
-            <a href="./secretariaPage.html" class="list-group-item menu-item">🏠 Inicio</a>
-            <a href="./agendaPage.html" class="list-group-item menu-item active">📅 Agenda</a>
-            <a href="./clientesPage.html" class="list-group-item menu-item">👥 Clientes</a>
-            <a href="./documentosPage.html" class="list-group-item menu-item">📂 Documentos</a>
-            <a href="./tareasPage.html" class="list-group-item menu-item">✅ Tareas</a>
-            <a href="./facturacionPage.html" class="list-group-item menu-item">💰 Facturación</a>
-            <a href="./informesPage.html" class="list-group-item menu-item">📊 Informes</a>
-          </ul>
-        </aside>
+    <div class="row min-vh-100">
 
-        <!-- Sección principal -->
-        <main class="col-12 col-lg-6 p-4">
-          <h1 class="mb-4 text-center">Agenda del Estudio Jurídico</h1>
+      <!-- Menú lateral -->
+      <aside class="col-12 col-lg-3 bg-light border-end p-3">
+        <h2 class="h5">Menú</h2>
+        <ul class="list-group">
+          <a href="./secretariaPage.html" class="list-group-item menu-item">🏠 Inicio</a>
+          <a href="./agendaPage.html" class="list-group-item menu-item active">📅 Agenda</a>
+          <a href="./clientesPage.html" class="list-group-item menu-item">👥 Clientes</a>
+          <a href="./documentosPage.html" class="list-group-item menu-item">📂 Documentos</a>
+          <a href="./tareasPage.html" class="list-group-item menu-item">✅ Tareas</a>
+          <a href="./facturacionPage.html" class="list-group-item menu-item">💰 Facturación</a>
+          <a href="./informesPage.html" class="list-group-item menu-item">📊 Informes</a>
+        </ul>
+      </aside>
 
-          <!-- Botón para agregar evento -->
-          <div class="d-flex justify-content-end mb-3">
-            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalEvento">
-              + Nueva Cita
-            </button>
-          </div>
+      <!-- Sección principal -->
+      <section class="col-12 col-lg-6 p-4">
+        <h1 class="mb-4 text-center">Agenda del Estudio Jurídico</h1>
 
-          <!-- Tabla de eventos -->
-          <div class="table-responsive ">
-            <table class="table table-bordered table-striped  ">
-              <thead class="table-dark">
-                <tr>
-                  <th>Fecha</th>
-                  <th>Hora</th>
-                  <th>Cliente</th>
-                  <th>Abogado</th>
-                  <th>Tipo de Evento</th>
-                  <th>Notas</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>10/06/2025</td>
-                  <td>09:00</td>
-                  <td>Juan Pérez</td>
-                  <td>Dra. Gómez</td>
-                  <td>Audiencia</td>
-                  <td>Civil - Tribunal 2</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+        <!-- Botón para agregar evento -->
+        <div class="d-flex justify-content-end mb-3">
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalEvento">
+            + Nueva Cita
+          </button>
+        </div>
 
-          <!-- Modal para agregar evento -->
-          <div class="modal fade" id="modalEvento" tabindex="-1" aria-labelledby="modalEventoLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <form class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="modalEventoLabel">Nueva Cita</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        <!-- Tabla de eventos -->
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+              <tr>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Cliente</th>
+                <th>Abogado</th>
+                <th>Tipo de Evento</th>
+                <th>Notas</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>10/06/2025</td>
+                <td>09:00</td>
+                <td>Juan Pérez</td>
+                <td>Dra. Gómez</td>
+                <td>Audiencia</td>
+                <td>Civil - Tribunal 2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Modal para agregar evento -->
+        <div class="modal fade" id="modalEvento" tabindex="-1" aria-labelledby="modalEventoLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <form class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalEventoLabel">Nueva Cita</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body">
+                <div class="mb-3">
+                  <label for="fecha" class="form-label">Fecha</label>
+                  <input type="date" class="form-control" id="fecha" required />
                 </div>
-                <div class="modal-body">
-                  <div class="mb-3">
-                    <label for="fecha" class="form-label">Fecha</label>
-                    <input type="date" class="form-control" id="fecha" required />
-                  </div>
-                  <div class="mb-3">
-                    <label for="hora" class="form-label">Hora</label>
-                    <input type="time" class="form-control" id="hora" required />
-                  </div>
-                  <div class="mb-3">
-                    <label for="cliente" class="form-label">Cliente</label>
-                    <input type="text" class="form-control" id="cliente" required />
-                  </div>
-                  <div class="mb-3">
-                    <label for="abogado" class="form-label">Abogado asignado</label>
-                    <select class="form-select" id="abogado">
-                      <option>Dra. Gómez</option>
-                      <option>Dr. Ruiz</option>
-                      <option>Dra. Ledesma</option>
-                    </select>
-                  </div>
-                  <div class="mb-3">
-                    <label for="tipo" class="form-label">Tipo de evento</label>
-                    <select class="form-select" id="tipo">
-                      <option>Audiencia</option>
-                      <option>Reunión</option>
-                      <option>Presentación</option>
-                      <option>Otro</option>
-                    </select>
-                  </div>
-                  <div class="mb-3">
-                    <label for="notas" class="form-label">Notas</label>
-                    <textarea class="form-control" id="notas" rows="2"></textarea>
-                  </div>
+                <div class="mb-3">
+                  <label for="hora" class="form-label">Hora</label>
+                  <input type="time" class="form-control" id="hora" required />
                 </div>
-                <div class="modal-footer">
-                  <button type="submit" class="btn btn-primary">Guardar</button>
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <div class="mb-3">
+                  <label for="cliente" class="form-label">Cliente</label>
+                  <input type="text" class="form-control" id="cliente" required />
                 </div>
-              </form>
-            </div>
+                <div class="mb-3">
+                  <label for="abogado" class="form-label">Abogado asignado</label>
+                  <select class="form-select" id="abogado">
+                    <option>Dra. Gómez</option>
+                    <option>Dr. Ruiz</option>
+                    <option>Dra. Ledesma</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="tipo" class="form-label">Tipo de evento</label>
+                  <select class="form-select" id="tipo">
+                    <option>Audiencia</option>
+                    <option>Reunión</option>
+                    <option>Presentación</option>
+                    <option>Otro</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="notas" class="form-label">Notas</label>
+                  <textarea class="form-control" id="notas" rows="2"></textarea>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              </div>
+            </form>
           </div>
-        </main>
+        </div>
+      </section>
 
-        <!-- Mensajería privada -->
-        <aside class="col-12 col-md-3 bg-light p-3 d-flex flex-column">
-          <h2 class="h5">Mensajería Privada</h2>
-          <div id="chat" class="chat-box flex-grow-1 border mb-2"></div>
-          <div class="input-group">
-            <input type="text" id="mensaje" class="form-control" placeholder="Escribe un mensaje..." />
-            <button id="enviarBtn" class="btn btn-primary">Enviar</button>
-          </div>
-        </aside>
+      <!-- Mensajería privada -->
+      <aside class="col-12 col-md-3 bg-light p-3 d-flex flex-column">
+        <h2 class="h5">Mensajería Privada</h2>
+        <div id="chat" class="chat-box flex-grow-1 border mb-2"></div>
+        <div class="input-group">
+          <input type="text" id="mensaje" class="form-control" placeholder="Escribe un mensaje..." />
+          <button id="enviarBtn" class="btn btn-primary">Enviar</button>
+        </div>
+      </aside>
 
-      </div>
     </div>
-</main>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  </main>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>
