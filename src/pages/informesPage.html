@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda - Estudio Jurídico</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/style/general.css">
+</head>
+
+<body class="bg-light">
+
+    <!-- HEADER -->
+    <header class="d-flex align-items-center justify-content-between p-3 bg-header">
+        <a href="#" class="logo d-flex align-items-center">
+            <img src="https://w7.pngwing.com/pngs/992/826/png-transparent-lawyer-advocate-law-firm-lawyer-people-logo-law-thumbnail.png"
+                alt="logo compañia">
+            <h2 class="ProyectoG4">ProyectoG4</h2>
+        </a>
+        <nav>
+            <a href="#" class="nav-link">Cerrar Sesión</a>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container-fluid">
+        <div class="row min-vh-100">
+
+            <!-- Menú lateral -->
+            <aside class="col-12 col-lg-3 bg-light border-end p-3">
+                <h2 class="h5">Menú</h2>
+                <ul class="list-group list-unstyled">
+                    <li><a href="./secretariaPage.html" class="list-group-item menu-item">🏠 Inicio</a></li>
+                    <li><a href="./agendaPage.html" class="list-group-item menu-item">📅 Agenda</a></li>
+                    <li><a href="./clientesPage.html" class="list-group-item menu-item">👥 Clientes</a></li>
+                    <li><a href="./documentosPage.html" class="list-group-item menu-item">📂 Documentos</a></li>
+                    <li><a href="./tareasPage.html" class="list-group-item menu-item">✅ Tareas</a></li>
+                    <li><a href="./facturacionPage.html" class="list-group-item menu-item">💰 Facturación</a></li>
+                    <li><a href="./informesPage.html" class="list-group-item menu-item active">📊 Informes</a></li>
+                </ul>
+
+            </aside>
+
+            <!-- Sección principal -->
+      <section class="col-12 col-lg-6 p-4">
+        <h2 class="mb-4">📊 Informes</h2>
+
+        <!-- Filtros -->
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <label for="tipoInforme" class="form-label">Tipo de informe:</label>
+            <select id="tipoInforme" class="form-select">
+              <option>Clientes activos</option>
+              <option>Casos abiertos/cerrados</option>
+              <option>Facturación mensual</option>
+              <option>Deudas pendientes</option>
+              <option>Tareas completadas</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="rangoFecha" class="form-label">Rango de fechas:</label>
+            <input type="month" class="form-control" />
+          </div>
+        </div>
+
+        <!-- Resultados de informe -->
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Resumen del Informe</h5>
+            <p class="card-text">Aquí aparecerán los resultados del informe seleccionado. Puedes mostrar gráficos, tablas o resúmenes aquí.</p>
+
+            <!-- Ejemplo de resumen -->
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Clientes activos: 24</li>
+              <li class="list-group-item">Casos abiertos: 8</li>
+              <li class="list-group-item">Facturación total del mes: $125.000</li>
+              <li class="list-group-item">Deudas pendientes: $32.000</li>
+              <li class="list-group-item">Tareas completadas: 87%</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Botones de acción -->
+        <div class="mt-4 text-end">
+          <button class="btn btn-outline-secondary"><i class="bi bi-download"></i> Exportar PDF</button>
+          <button class="btn btn-outline-success"><i class="bi bi-file-earmark-excel"></i> Exportar Excel</button>
+        </div>
+      </section>
+
+
+            <!-- Mensajería privada -->
+            <aside class="col-12 col-lg-3 bg-light p-3 d-flex flex-column">
+                <h2 class="h5">Mensajería Privada</h2>
+                <div id="chat" class="chat-box flex-grow-1 border mb-2"></div>
+                <div class="input-group">
+                    <input type="text" id="mensaje" class="form-control" placeholder="Escribe un mensaje..." />
+                    <button id="enviarBtn" class="btn btn-primary">Enviar</button>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
